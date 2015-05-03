@@ -120,8 +120,13 @@ span.question-selected {
   height: 500px;
 }
 
-.foreground {
-  fill: none;
+svg {
+  pointer-events: none;
+}
+
+/* Outline of map and ocean color*/
+.outline {
+  fill: #9ecae1;
   stroke: #000;
   stroke-width: 1px;
   pointer-events: all;
@@ -129,13 +134,32 @@ span.question-selected {
   cursor: -moz-grab;
 }
 
+/* Country interiors (for fill) and borders (for stroke)*/
 .land {
-  fill: #69D2E7;
-  stroke: none;
+  fill: #238b45;
+  stroke: #000;
 }
 
+/* Country borders */
 .mesh {
-  stroke: #50576A;
+  stroke: #222222;
   stroke-width: .5px;
   fill: none;
+}
+
+/* Lat-Long lines */
+.graticule {
+  fill: none;
+  stroke: #000000;
+  stroke-opacity: .4;
+  stroke-width: .5px;
+}
+
+/* Points of interest */
+.poi {
+  fill: #ff0000;
+  stroke: #000000;
+  stroke-width: 1px;
+  cursor: pointer;
+  pointer-events: all;
 }
