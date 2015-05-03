@@ -10,25 +10,21 @@ var path = d3.geo.path()
     .projection(projection);
 
 var λ = d3.scale.linear()
-    .domain([0, width])
-    .range([-180, 180]);
+    .domain([-width, 0, width])
+    .range([180, -180, 180]);
 
 var φ = d3.scale.linear()
     .domain([0, height])
     .range([90, -90]);
 
 var drag = d3.behavior.drag()
+    .on("dragstart", dragstart)
     .on("drag", dragged);
 
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
-    .attr("height", height);
-
-svg.on("drag", function() {
-  var p = d3.mouse(this);
-  projection.rotate([λ(p[0]), φ(p[1])]);
-  svg.selectAll("path").attr("d", path);
-});
+    .attr("height", height)
+    .call(drag);
 
 d3.json("world-110m.json", function(error, world) {
   d3.selectAll("svg").insert("path", ".foreground")
@@ -36,14 +32,28 @@ d3.json("world-110m.json", function(error, world) {
       .attr("class", "land");
   d3.selectAll("svg").insert("path", ".foreground")
       .datum(topojson.mesh(world, world.objects.countries))
-      .attr("class", "mesh");    
+      .attr("class", "mesh");
+
   d3.selectAll("svg").selectAll("path").attr("d", path)
-      .call(drag)
+
+   d3.selectAll("svg").attr("map-x", 0);
 });
 
+function dragstart(d) {
+    // from http://bl.ocks.org/jczaplew/6457917
+    var proj = projection.rotate();
+    m0 = d3.event.sourceEvent.pageX;
+    o0 = -proj[0];
+}
+
 function dragged(d) {
-  console.log("dragging")
-  projection.rotate([λ(d3.event.x), 0]);
-  svg.selectAll("path").attr("d", path);
-  // d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+  if (m0) {
+      var m1 = d3.event.sourceEvent.pageX;
+          o1 = o0 + (m0 - m1) / 4;
+      projection.rotate([-o1, 0]);
+  }
+
+  // Update the map
+  path = d3.geo.path().projection(projection);
+  d3.selectAll("path").attr("d", path);
 }
