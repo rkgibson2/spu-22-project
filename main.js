@@ -1,5 +1,13 @@
-var width = 960,
+var width = 700,
     height = 500;
+
+// tooltip
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) {
+    return "<b> Test. Should never be seen</b>"
+  });
 
 var projection = d3.geo.orthographic()
     .scale(250)
@@ -27,7 +35,8 @@ var drag = d3.behavior.drag()
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
     .attr("height", height)
-    .call(drag);
+    .call(drag)
+    .call(tip);
 
 d3.json("world-110m.json", function(error, world) {
   // add sphere around map
@@ -81,12 +90,26 @@ function dragged(d) {
 // add points of interest
 function addpoints(poi) {
 
-  // Eratosthenes, Alexandria
   svg.selectAll(".poi")
       .data(poi)
     .enter().append("path")
       .attr("class", function(d) {
         return "poi " + d.name
       })
-      .attr("d", path);
+      .attr("d", path)
+      .on("mouseover", function(d) {
+        var html_string = d.tooltip + "<div class='more-info-text'> Click the location for more information on this subject. </div>"
+        tip.html(html_string)
+            .show(d)
+      })
+      .on("mouseout", tip.hide)
+      // prevent event propagation to drag
+      .on("mousedown", function(d) {
+        d3.event.stopPropagation()
+      })
+      .on("click", showSideBar);
+}
+
+function showSideBar(place) {
+  console.log("Clicked")
 }

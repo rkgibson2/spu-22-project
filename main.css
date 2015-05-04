@@ -12,7 +12,7 @@ label {
 #page-header {
   position: fixed;
   width: 100%;
-  height: 175px;
+  height: 100px;
   top: 0px;
   left: 0px;
   padding: 5px;
@@ -22,7 +22,7 @@ label {
 }
 
 #page-content {
-  margin-top: 180px;
+  margin-top: 105px;
 }
 
 #page-content>div {
@@ -42,12 +42,27 @@ text {
 .d3-tip {
   z-index: 101;
   line-height: 1;
+  width: 400px;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  border-radius: 1px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+  border-radius: 25px;
+  color: #000;
   text-align: center;
   pointer-events: none;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
 }
 
 /* Northward tooltips */
@@ -115,9 +130,27 @@ span.question-selected {
   color: #4f4f4f;
 }
 
+.row-cont {
+  width: 1105px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.row-cont div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
 #map {
-  width: 960px;
+  width: 700px;
   height: 500px;
+}
+
+#info {
+  width: 400px;
+  text-align: left;
+  display: none;
 }
 
 svg {
@@ -162,4 +195,8 @@ svg {
   stroke-width: 1px;
   cursor: pointer;
   pointer-events: all;
+}
+
+.more-info-text {
+  margin-top: 5px;
 }

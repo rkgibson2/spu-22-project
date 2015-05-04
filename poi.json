@@ -7,7 +7,7 @@
             29.916667, 
             31.2
         ], 
-        "tooltip": "Alexandria, Egypt is where Eratosthenese measured the circumference of the Earth in around 240 B.C.E."
+        "tooltip": "<b>Alexandria, Egypt</b> is where Eratosthenes measured the circumference of the Earth in around 240 B.C.E."
     }, 
     {
         "type": "Point", 
@@ -17,7 +17,7 @@
             -71.110556, 
             42.373611
         ], 
-        "tooltip": "Cambridge is where our class is taught!"
+        "tooltip": "<b>Cambridge, Massachusetts</b> is where our class is taught!"
     }, 
     {
         "radius": 5, 
@@ -27,6 +27,6 @@
             -157.796389, 
             21.311389
         ], 
-        "tooltip": "Hawaii is an excellent example of plate tectonics. As the Pacific plate moves, a hotspot in the Pacific Ocean moves under it. This hotspot creates new volcanoes and islands and, eventually, the entire Hawaiian archipelago."
+        "tooltip": "<b>Hawaii</b> is an excellent example of plate tectonics. As the Pacific plate moves, a hotspot in the Pacific Ocean moves under it. This hotspot creates new volcanoes and islands and, eventually, the entire Hawaiian archipelago."
     }
 ]
