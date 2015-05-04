@@ -83,7 +83,6 @@ function dragged(d) {
   }
 
   // Update the map
-  path = d3.geo.path().projection(projection);
   d3.selectAll("path").attr("d", path);
 }
 
@@ -98,18 +97,37 @@ function addpoints(poi) {
       })
       .attr("d", path)
       .on("mouseover", function(d) {
-        var html_string = d.tooltip + "<div class='more-info-text'> Click the location for more information on this subject. </div>"
+        var html_string = d.tooltip + "<div class='more-info-text'> Click the location for more information on this subject. </div>";
         tip.html(html_string)
-            .show(d)
+            .show(d);
       })
       .on("mouseout", tip.hide)
       // prevent event propagation to drag
       .on("mousedown", function(d) {
-        d3.event.stopPropagation()
+        d3.event.stopPropagation();
       })
       .on("click", showSideBar);
 }
 
 function showSideBar(place) {
-  console.log("Clicked")
+  d3.select("#info").classed("no-display", false);
+
+
+  d3.select("#info .place").text(place.placetitle);
+  d3.select("#info .desc").html(place.longdesc);
+
+  if ("image" in place && place.image != "") {
+    d3.select("#info .image img").attr("src", place.image);
+    d3.select("#info .image").classed("no-display", false);
+  } else {
+    d3.select("#info .image").classed("no-display", true);
+  }
+
+  if ("moreinfo" in place && place.moreinfo != "") {
+    d3.select("#info .more-info a").attr("href", place.moreinfo);
+    d3.select("#info .more-info").classed("no-display", false);
+  } else {
+    d3.select("#info .more-info").classed("no-display", true);
+  }
+
 }

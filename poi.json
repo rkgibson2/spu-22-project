@@ -1,32 +1,44 @@
 [
     {
-        "type": "Point", 
-        "radius": 5, 
-        "name": "alexandria", 
         "coordinates": [
             29.916667, 
             31.2
         ], 
-        "tooltip": "<b>Alexandria, Egypt</b> is where Eratosthenes measured the circumference of the Earth in around 240 B.C.E."
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png", 
+        "longdesc": "Eratosthenes was a Greek scholar living in Egypt, where he was the chief librarian of the Library of Alexandria. He heard that, on the summer solstice, one could see the sun reflected off of the water in the bottom of a well in a town called Syrene (modern day Aswan). In Alexandria, the sun was not directly overhead on this date. He measured the distance from Alexandria to Syrene, and, using geometry, calculated the circumference of the Earth. His measurement was around 25,000&nbsp;km, remarkably accurate for his time.", 
+        "moreinfo": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png", 
+        "name": "alexandria", 
+        "placetitle": "Alexandria, Egypt", 
+        "radius": 6, 
+        "tooltip": "<b>Alexandria, Egypt</b> is where Eratosthenes measured the circumference of the Earth in around 240 B.C.E.", 
+        "type": "Point"
     }, 
     {
-        "type": "Point", 
-        "radius": 5, 
+        "coordinates": [
+            -71.116944, 
+            42.374444
+        ], 
+        "image": "img/veritas.png", 
+        "longdesc": "Cambridge is the location of Harvard University, the place where SPU 22 is taught.", 
+        "moreinfo": "", 
         "name": "cambridgema", 
-        "coordinates": [
-            -71.110556, 
-            42.373611
-        ], 
-        "tooltip": "<b>Cambridge, Massachusetts</b> is where our class is taught!"
+        "placetitle": "Cambridge, Massachusetts, USA", 
+        "radius": 6, 
+        "tooltip": "<b>Cambridge, Massachusetts</b> is where our class is taught!", 
+        "type": "Point"
     }, 
     {
-        "radius": 5, 
-        "type": "Point", 
-        "name": "hawaii", 
         "coordinates": [
-            -157.796389, 
-            21.311389
+            85.144, 
+            25.611
         ], 
-        "tooltip": "<b>Hawaii</b> is an excellent example of plate tectonics. As the Pacific plate moves, a hotspot in the Pacific Ocean moves under it. This hotspot creates new volcanoes and islands and, eventually, the entire Hawaiian archipelago."
+        "image": "", 
+        "longdesc": "Aryabhata was an Indian mathematician and astronomer born in 476 C.E. His biggest work was called the Aryabhatiya. In it, he presented an approximation of &pi; that wouldn't be surpassed until the Middle Ages. He then calculated the circumference of the Earth to within 1&#37;. He also realized that the stars move across the sky because the Earth is rotating, something most people after him didn't believe.", 
+        "moreinfo": "http://www-history.mcs.st-and.ac.uk/Biographies/Aryabhata_I.html", 
+        "name": "pataliputra", 
+        "placetitle": "Pataliputra, Bihar, India", 
+        "radius": 6, 
+        "tooltip": "The Indian mathemetician and astronomer Aryabhata measured the Earth's circumference to great accuracy around 530 C.E., most likely at a university in <b>Pataliputra, India</b>.", 
+        "type": "Point"
     }
 ]
