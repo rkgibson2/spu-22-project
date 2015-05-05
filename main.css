@@ -36,6 +36,16 @@ text {
   font-size: 18px;
 }
 
+#title {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Scada', sans-serif;
+}
+
 /*tooltip styles*/
 
 /*these styles come from: https://github.com/Caged/d3-tip*/
@@ -132,8 +142,10 @@ span.question-selected {
 
 .row-cont {
   width: 1105px;
+  height: 600px;
   padding-top: 15px;
-  text-align: center;
+  /* set position to relative to allow positioning of map div */
+  position: relative;
 }
 
 .row-cont>div {
@@ -144,12 +156,20 @@ span.question-selected {
 
 #map {
   width: 700px;
-  height: 500px;
+  height: 600px;
+}
+
+#map-help {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 12px;
 }
 
 #info {
   width: 400px;
   text-align: left;
+  position: absolute;
+  right: 0px;
 }
 
 .no-display {

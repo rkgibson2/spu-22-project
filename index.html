@@ -2,6 +2,7 @@
 <head>
   <meta charset="utf-8">
   <title>SPU 22 Final Project</title>
+  <link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="main.css"></link>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -14,11 +15,15 @@
 <body>
 
   <div id="page-header">
+    <div id="title">Measuring the Earth: An interactive exploration</div>
   </div>
 
   <div id="page-content">
     <div class="row-cont">
-      <div id="map"></div>
+      <div id="map" style="position: absolute; left: 200px;">
+        <div id="map-holder"></div>
+        <div id="map-help">Click and drag on the globe to rotate it!</div>
+      </div>
       <div id="info" class="no-display">
         <div class="place">Belmont, MA</div>
         <div class="image no-display"><img src="img/veritas.png"></div>
@@ -27,6 +32,7 @@
         </div>
         <div class="more-info no-display">
           For more info, <a href="https://youtu.be/oHg5SJYRHA0" target="_blank">click here</a>.
+        </div>
       </div>
     </div>
 

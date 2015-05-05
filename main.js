@@ -14,25 +14,21 @@ var projection = d3.geo.orthographic()
     .translate([width / 2, height / 2])
     .clipAngle(90);
 
+// rotate projection to start at Cambridge
+projection.rotate([71.116944, 0])
+
 var path = d3.geo.path()
     .projection(projection);
 
 // base point radiuses off of datum "radius" element
 path.pointRadius(function(f, i) { return f.radius})
 
-var λ = d3.scale.linear()
-    .domain([0, width])
-    .range([-180, 180]);
-
-var φ = d3.scale.linear()
-    .domain([0, height])
-    .range([90, -90]);
-
+// set up dragging for the map
 var drag = d3.behavior.drag()
     .on("dragstart", dragstart)
     .on("drag", dragged);
 
-var svg = d3.select("#map").append("svg")
+var svg = d3.select("#map-holder").append("svg")
     .attr("width", width)
     .attr("height", height)
     .call(drag)
@@ -110,9 +106,7 @@ function addpoints(poi) {
 }
 
 function showSideBar(place) {
-  d3.select("#info").classed("no-display", false);
-
-
+  // set up new info
   d3.select("#info .place").html(place.placetitle);
   d3.select("#info .desc").html(place.longdesc);
 
@@ -130,4 +124,22 @@ function showSideBar(place) {
     d3.select("#info .more-info").classed("no-display", true);
   }
 
+  // check if we need to do transition
+  if (d3.select("#info").classed("no-display")) {
+    // duration of map slide
+    var duration = 1500
+
+    // move map over to left
+    d3.select("#map")
+        .transition().duration(duration)
+        .style("left", "0px");
+      
+    // get info div to appear
+    d3.select("#info")
+        .classed("no-display", false)
+        .style("opacity", 0)
+      .transition().delay(duration / 2).duration(duration / 2)
+        .style("opacity", 1);
+        
+  }
 }
