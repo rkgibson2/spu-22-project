@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import json
 
-with open("poi.json") as infile:
+with open("data/poi.json") as infile:
 	poi = json.load(infile)
 
 print "Short name of place:"
@@ -39,5 +39,5 @@ new_point = {"type": "Point",
  			 "longdesc": longdesc}
 poi.append(new_point)
 
-with open("poi.json", "w") as outfile:
+with open("data/poi.json", "w") as outfile:
 	json.dump(poi, outfile, indent=4, sort_keys=True)
