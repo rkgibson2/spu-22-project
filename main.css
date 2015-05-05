@@ -212,9 +212,8 @@ svg {
 }
 
 #info .image {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 350px;
+  margin: 10px auto;
   text-align: center;
 }
 

@@ -113,7 +113,7 @@ function showSideBar(place) {
   d3.select("#info").classed("no-display", false);
 
 
-  d3.select("#info .place").text(place.placetitle);
+  d3.select("#info .place").html(place.placetitle);
   d3.select("#info .desc").html(place.longdesc);
 
   if ("image" in place && place.image != "") {

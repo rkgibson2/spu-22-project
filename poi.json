@@ -18,13 +18,13 @@
             -71.116944, 
             42.374444
         ], 
-        "image": "img/veritas.png", 
-        "longdesc": "Cambridge is the location of Harvard University, the place where SPU 22 is taught.", 
-        "moreinfo": "", 
+        "image": "http://htlit.com/elements/DunsterHouse.jpg", 
+        "longdesc": "SPU 22 is taught at Harvard University, in Cambridge, Massachusetts by Irwin Shapiro. He also helped in the invention of Very Long Baseline Interferometry (VLBI). In class, we talked about how it could be used to track the motion of the plates in plate tectonics, but it can also be simply used to find distance between two points, enabling us to calculate the circumference of the Earth much more accurately.",
+        "moreinfo": "https://www.physics.harvard.edu/people/facpages/shapiro",
         "name": "cambridgema", 
         "placetitle": "Cambridge, Massachusetts, USA", 
         "radius": 6, 
-        "tooltip": "<b>Cambridge, Massachusetts</b> is where our class is taught!", 
+        "tooltip": "<b>Cambridge, Massachusetts</b> is where our class is taught by Irwin Shaprio, who helped develop Very Long Baseline Interferometry.", 
         "type": "Point"
     }, 
     {
@@ -39,6 +39,76 @@
         "placetitle": "Pataliputra, Bihar, India", 
         "radius": 6, 
         "tooltip": "The Indian mathemetician and astronomer Aryabhata measured the Earth's circumference to great accuracy around 530 C.E., most likely at a university in <b>Pataliputra, India</b>.", 
+        "type": "Point"
+    }, 
+    {
+        "coordinates": [
+            73.3, 
+            32.35
+        ], 
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Abu_Reyhan_Biruni-Earth_Circumference.svg", 
+        "longdesc": "The Persian astronomer Abu Rayhan Biruni was a polymath, one of the greatest Islamic scholars. He was a great representation of the unity of science, making discoveries in many different disciplines. Here, he used trigonometry to calculat the radius of the Earth to within 20&nbsp;km. From the top of a mountain, he measured the angle down to flat ground. He could then measure the height of the mountain with more trigonometry and use the Law of Sines to find the Earth's radius.", 
+        "moreinfo": "https://en.wikipedia.org/wiki/History_of_geodesy#Biruni", 
+        "name": "pakistan", 
+        "placetitle": "Pakistan", 
+        "radius": 6, 
+        "tooltip": "The Persian scientist Biruni calculated the Earth's radius from a mountain in present-day <b>Pakistan</b>.", 
+        "type": "Point"
+    }, 
+    {
+        "coordinates": [
+            28.0, 
+            36.166667
+        ], 
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Posidonio%2C_replica_augustea_%2823_ac.-14_dc_ca%29_da_originale_del_100-50_ac._ca._6142.JPG", 
+        "longdesc": "Posidonius of Rhodes used sighting the same star in different places, Rhodes and Alexandria, to calculate the circumference of the Earth. The star would be at different altitudes in the two locations, with the difference coming from the Earth's curvature. By measuring the difference in altutide and knowing the distance from Rhodes to Alexandria, he calculated the circumference to be 38,647&nbsp;km, quite close to the modern accepted value of 40,096&nbsp;km. However, bad things would come from this method. The great philosopher Ptolemy redid Posidonius' calculations and declared the circumference of the Earth to be 28,985&nbsp;km, far to low. Because of Ptolemy's fame, this lower value came to be accepted througout Europe, and contributed to why Christopher Columbus thought he could sail to Asia by going the other way.", 
+        "moreinfo": "http://www.geo.hunter.cuny.edu/~jochen/gtech201/lectures/lec6concepts/Datums/Determining%20the%20earths%20size.htm", 
+        "name": "rhodes", 
+        "placetitle": "Rhodes, Greece", 
+        "radius": 6, 
+        "tooltip": "Posidonius of <b>Rhodes</b> measured the Earth's circumference to within 3&#37;, but when Ptolemy, who was by far more famous, redid the calculations, he was off by 20&#37;.", 
+        "type": "Point"
+    }, 
+    {
+        "coordinates": [
+            2.3508, 
+            48.8567
+        ], 
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Institut_France.jpg/640px-Institut_France.jpg", 
+        "longdesc": "One consequence of Isaac Newton's theory of gravitation was that the Earth was actually an oblate spheroid, fatter at the equator. Around 1700 C.E., Jacques Cassini was measuring the width of one degree of longitude in the area around Paris. However, he found that his value of a degree measured north of Paris was shorter than that measured south of Paris. This would imply that the Earth was actually fatter between the poles, more egg-shaped. The French Academy of Sciences sent expeditions to Ecuador on the equator and the Torne Valley in northern Finland. Measurements from those missions vindicated Newton: the Earth was in fact fatter at the equator, and Cassini was wrong.", 
+        "moreinfo": "https://en.wikipedia.org/wiki/History_of_geodesy#Europe", 
+        "name": "paris", 
+        "placetitle": "Paris, France", 
+        "radius": 6, 
+        "tooltip": "By the eighteenth century, scientists had realized the Earth was not exactly spherical. The French Academy of Sciences, located in <b>Paris</b>, headed the charge to determine how elliptical the Earth was and measurements related to that.", 
+        "type": "Point"
+    }, 
+    {
+        "coordinates": [
+            2.158056, 
+            41.364167
+        ], 
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Monjuic%27s_castle_in_Barcelona.jpg/320px-Monjuic%27s_castle_in_Barcelona.jpg", 
+        "longdesc": "The French Academy of Sciences wanted to have a fixed definition for the length of the meter. This would help standardize measurements across France and, hopefully, Europe. For many reasons, they ended up deciding on defining the meter to be one ten-millionth of the distance from the North Pole to the Equator along the Paris meridian. The Academy appointed Pierre M&eacute;chain and Jean-Baptiste Delambre to calculate the correct length. They measured from the belfry in Dunkirk to the fortress on Montju&iuml;c in Barcelona, Spain. They did complete their survey, and the value they came up with is still approximately the same as the meter today. However, their calculation the total distance from the North Pole to the Equator was a bit off due to incorrectly factoring in the flatness of the Earth. Thus, the meter is not exactly one ten-millionth of the distance from the North Pole to the Equator, but it is close.", 
+        "moreinfo": "https://en.wikipedia.org/wiki/History_of_the_metre", 
+        "name": "montjuic", 
+        "placetitle": "Montju&iuml;c, Barcelona, Catalonia, Spain", 
+        "radius": 6, 
+        "tooltip": "The Fortress of <b>Montju&iuml;c</b> was the endpoint of the measurement that originally definied the meter, defined as one ten-millionth the distance from the North Pole to the Equator.", 
+        "type": "Point"
+    }, 
+    {
+        "coordinates": [
+            -77.197036, 
+            38.753372
+        ], 
+        "image": "http://earth-info.nga.mil/GandG/images/SN_logo3.jpg", 
+        "longdesc": "The current accepted measurements for the dimensions of the Earth are now quoted in terms of the semi-major and semi-minor axes of the Earth at the Equator as well as its flattening. These measurements are part of the World Geodetic System (Geodetic refers to measurements of the Earth). The most recent set of written standards is WGS 84, although it has been updated since then. The body that keeps these standards is the U.S. National Geospatial-Intelligency Agency, which is headquartered in Springfield, Virginia.", 
+        "moreinfo": "http://earth-info.nga.mil/GandG/wgs84/index.html", 
+        "name": "springfieldva", 
+        "placetitle": "Sprintfield, Virginia, USA.", 
+        "radius": 6, 
+        "tooltip": "<b>Springfield, Virginia</b> is the home of the U.S. National Geospatial-Intelligence Agency, the keepers of many modern measurements.", 
         "type": "Point"
     }
 ]
