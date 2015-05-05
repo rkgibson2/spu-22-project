@@ -34,7 +34,7 @@ var svg = d3.select("#map-holder").append("svg")
     .call(drag)
     .call(tip);
 
-d3.json("world-110m.json", function(error, world) {
+d3.json("data/world-110m.json", function(error, world) {
   // add sphere around map
   svg.append("path")
       .datum({type: "Sphere"})
@@ -57,7 +57,7 @@ d3.json("world-110m.json", function(error, world) {
       .attr("d", path);
 
   // load data on points of interest
-  d3.json("poi.json", function(error, poi) {
+  d3.json("data/poi.json", function(error, poi) {
     addpoints(poi);
   });
 });
