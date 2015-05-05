@@ -106,7 +106,7 @@
         "longdesc": "The current accepted measurements for the dimensions of the Earth are now quoted in terms of the semi-major and semi-minor axes of the Earth at the Equator as well as its flattening. These measurements are part of the World Geodetic System (Geodetic refers to measurements of the Earth). The most recent set of written standards is WGS 84, although it has been updated since then. The body that keeps these standards is the U.S. National Geospatial-Intelligency Agency, which is headquartered in Springfield, Virginia.", 
         "moreinfo": "http://earth-info.nga.mil/GandG/wgs84/index.html", 
         "name": "springfieldva", 
-        "placetitle": "Sprintfield, Virginia, USA.", 
+        "placetitle": "Springfield, Virginia, USA.", 
         "radius": 6, 
         "tooltip": "<b>Springfield, Virginia</b> is the home of the U.S. National Geospatial-Intelligence Agency, the keepers of many modern measurements.", 
         "type": "Point"
