@@ -4,9 +4,9 @@
             29.916667, 
             31.2
         ], 
-        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Eratosthene.01.png", 
+        "image": "img/alexandria.png", 
         "longdesc": "Eratosthenes was a Greek scholar living in Egypt, where he was the chief librarian of the Library of Alexandria. He heard that, on the summer solstice, one could see the sun reflected off of the water in the bottom of a well in a town called Syrene (modern day Aswan). In Alexandria, the sun was not directly overhead on this date. He measured the distance from Alexandria to Syrene, and, using geometry, calculated the circumference of the Earth. His measurement was around 25,000&nbsp;km, remarkably accurate for his time.", 
-        "moreinfo": "img/alexandria.png", 
+        "moreinfo": "http://www.astro.cornell.edu/academics/courses/astro201/eratosthenes.htm", 
         "name": "alexandria", 
         "placetitle": "Alexandria, Egypt", 
         "radius": 6, 
